@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Arma a Aurora</title>
-<meta name="description" content="Diseña a Aurora, la asistente de la Cámara de Comercio de Santa Marta, y envía tu diseño como voto.">
+<title>Tu creatividad le dará forma a algo nuevo</title>
+<meta name="description" content="Da vida a un nuevo personaje de la Cámara de Comercio de Santa Marta para el Magdalena y envía tu diseño como voto.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
@@ -16,7 +16,7 @@
   <header class="top">
     <div class="brand">
       <span class="mark" aria-hidden="true"><svg viewBox="0 0 38 30"><path d="M19 15C14 4 3 1 2 7c-1 5 4 8 9 8-5 1-8 5-6 9 3 5 11 0 14-9z" fill="#F4F7F7"/><path d="M19 15C24 4 35 1 36 7c1 5-4 8-9 8 5 1 8 5 6 9-3 5-11 0-14-9z" fill="#F4F7F7"/><path d="M2 7c1-6 9-4 13 2-5 1-9 1-13-2zM36 7c-1-6-9-4-13 2 5 1 9 1 13-2z" fill="#F08A0C"/><rect x="18" y="8" width="2" height="16" rx="1" fill="#2B3033"/></svg></span>
-      <div><b>Arma a Aurora</b><small id="subtitle">Elige sus rasgos y mira cómo cambia en vivo.</small></div>
+      <div><b>Un nuevo personaje</b><small id="subtitle">Elige sus rasgos y mira cómo cambia en vivo.</small></div>
     </div>
     <nav class="topnav" id="topnav" hidden>
       <button class="navbtn" id="navArmar" type="button">Mi diseño</button>
@@ -27,19 +27,19 @@
 
   <!-- Código de acceso -->
   <section class="panel narrow" id="s-acceso">
-    <div class="head"><span class="eyebrow">Cámara de Comercio de Santa Marta</span><h1>Diseñemos a Aurora</h1><p>Esta página es para colaboradores de la CCSM. Escribe el código de acceso que te compartió el equipo organizador.</p></div>
+    <div class="head"><span class="eyebrow">Cámara de Comercio de Santa Marta para el Magdalena</span><h1>Tu creatividad le dará forma a algo nuevo…</h1><p>¡Este es el momento de imaginar, elegir y crear juntos! Te invitamos a dar vida a un nuevo personaje que muy pronto nos acompañará… Tus ideas serán clave para construirlo entre todos.</p><p>Para comenzar, ingresa el código de acceso.</p></div>
     <form class="field" id="fAcceso" autocomplete="off">
       <label for="codigo">Código de acceso</label>
       <input id="codigo" type="text" inputmode="text" placeholder="Escribe el código" required>
       <p class="status" id="stAcceso" aria-live="polite"></p>
-      <div class="row"><button class="primary" type="submit">Entrar</button></div>
+      <div class="row"><button class="primary" type="submit">Comenzar</button></div>
     </form>
     <p class="note" id="demoNote" hidden></p>
   </section>
 
   <!-- Bienvenida -->
   <section class="panel narrow" id="s-bienvenida" hidden>
-    <div class="head"><span class="eyebrow">Bienvenida</span><h1>¿Cómo te imaginas a Aurora?</h1><p>Aurora es la asistente de la CCSM: saluda y conversa con las personas que reconoce. Vamos a decidir juntos cómo se ve: su estilo, su tono de piel, su cabello, sus ojos y las luces de su traje.</p></div>
+    <div class="head"><span class="eyebrow">Bienvenida</span><h1>¿Cómo imaginas a nuestro nuevo personaje?</h1><p>Muy pronto un nuevo personaje acompañará a la CCSM. Vamos a decidir juntos cómo se ve: su estilo, su tono de piel, su cabello, sus ojos y las luces de su traje.</p></div>
     <div class="welcome">
       <div class="kpi"><small>Qué vas a hacer</small><b>Armarla paso a paso</b></div>
       <div class="kpi"><small>Tu diseño</small><b>Cuenta como voto</b></div>
@@ -47,7 +47,7 @@
       <div class="kpi"><small>Cuánto toma</small><b>Unos 2 minutos</b></div>
     </div>
     <ol class="steps-list">
-      <li>Respondes hasta 5 preguntas y ves a Aurora cambiar en vivo.</li>
+      <li>Respondes hasta 5 preguntas y ves al personaje cambiar en vivo.</li>
       <li>Revisas tu ficha, eliges tu nombre de la lista y envías tu voto. Es definitivo.</li>
       <li>Después de votar ves cómo va la votación.</li>
     </ol>
@@ -57,7 +57,7 @@
 
   <!-- Armador / revisión / confirmación / resultados / galería -->
   <main class="grid" id="s-grid" hidden>
-    <section class="studio" id="stage" aria-label="Vista en vivo de Aurora">
+    <section class="studio" id="stage" aria-label="Vista en vivo del personaje">
       <div class="studio-top"><span class="live"><i></i><span id="liveLabel">Vista en vivo</span></span><span class="tag" id="tag"></span></div>
       <div class="figure" id="av"><div class="sway"><div class="stack"></div></div></div>
       <div class="studio-bottom"><button class="chip" id="rand" type="button">Sorpréndeme</button></div>

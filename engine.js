@@ -3,7 +3,7 @@
    Contrato:
      AuroraCompose.stackHTML(diseño)          capas como <img> posicionadas en % (sirve para vista en vivo y miniaturas)
      AuroraCompose.thumbHTML(diseño, vista)   miniatura encuadrada: full · face · eyes · body
-     AuroraCompose.codigo(diseño)             código legible del diseño (AUR·TECNOLOGICA·…)
+     AuroraCompose.codigo(diseño)             código legible del diseño (CCSM·TECNOLOGICA·…)
      AuroraCompose.png(diseño, escala)        Blob PNG con las mismas capas (exportación del panel)
      const av = new AuroraEngine(contenedor, diseño); av.set(diseño, pop); av.greet() */
 (function () {
@@ -37,7 +37,7 @@
     const V = VIEWS[vista] || VIEWS.full, f = V.f || V[st.estilo] || [50, 50], z = V.z;
     return `<div class="thumb"><div class="figure" style="transform:translate(${-z * (f[0] - 50)}%,${-z * (f[1] - 50)}%) scale(${z})"><div class="stack">${stackHTML(st)}</div></div></div>`;
   }
-  const codigo = st => ['AUR', st.estilo, st.piel, st.cabello, st.ojos, st.estilo === 'tecnologica' ? st.lineas : '-'].join('·').toUpperCase();
+  const codigo = st => ['CCSM', st.estilo, st.piel, st.cabello, st.ojos, st.estilo === 'tecnologica' ? st.lineas : '-'].join('·').toUpperCase();
 
   async function png(st, escala = 1) {
     const { n, out } = layers(st), s = Math.round(n * escala);

@@ -153,7 +153,7 @@
   let confirmando = false;
   function renderRevision() {
     picked = null; confirmando = false;
-    $('eyebrow').textContent = 'Revisión'; $('q').textContent = 'Así imaginas a Aurora'; $('help').textContent = 'Revisa tu ficha. Puedes volver a cualquier paso desde la barra de arriba. Cuando estés conforme, elige tu nombre y envía tu voto.';
+    $('eyebrow').textContent = 'Revisión'; $('q').textContent = 'Así imaginas al nuevo personaje'; $('help').textContent = 'Revisa tu ficha. Puedes volver a cualquier paso desde la barra de arriba. Cuando estés conforme, elige tu nombre y envía tu voto.';
     const cerrada = estado.rondaA !== 'abierta';
     $('body').innerHTML = fichaHTML(S) + (cerrada ? `<div class="lock"><b>La votación está cerrada</b>Ya no se reciben diseños. Si la galería está habilitada, puedes ver los diseños enviados.</div>` : `<div id="cb"></div><p class="hint"><b>Tu voto es definitivo.</b> Una vez enviado no se puede cambiar. Si te equivocas, avisa al organizador para que lo anule y puedas volver a votar.</p><p class="status" id="stVoto" aria-live="polite"></p>`);
     $('next').textContent = 'Enviar mi voto'; $('next').disabled = true; $('back').disabled = false;
@@ -178,7 +178,7 @@
     } catch (e) { st.textContent = 'No se pudo conectar. Tu voto no se envió. Intenta de nuevo.'; st.className = 'status bad'; $('next').disabled = false; confirmando = false; }
   }
   function renderConfirmacion() {
-    $('eyebrow').textContent = 'Voto guardado'; $('q').textContent = `¡Gracias, ${SES.colab ? SES.colab.nombre.split(' ').slice(-2).join(' ') : ''}!`; $('help').textContent = 'Tu diseño quedó registrado como tu voto. Aurora te saluda.';
+    $('eyebrow').textContent = 'Voto guardado'; $('q').textContent = `¡Gracias, ${SES.colab ? SES.colab.nombre.split(' ').slice(-2).join(' ') : ''}!`; $('help').textContent = 'Tu diseño quedó registrado como tu voto. ¡Gracias por darle forma!';
     $('body').innerHTML = `<div class="lock" style="border-style:solid;border-color:var(--cyan)"><b>Tu voto quedó guardado</b>Esta es la ficha que enviaste. Los resultados ya están disponibles para ti.</div>` + fichaHTML(S);
     $('next').textContent = 'Ver resultados'; $('next').disabled = false; $('next').hidden = false; $('back').disabled = true;
     $('rail').hidden = true;
